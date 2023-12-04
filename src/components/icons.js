@@ -13,7 +13,7 @@ const Icons = (icon) => {
       break;
     
     case 'Clouds':
-      icon='icons/fog.svg'
+      icon='icons/clear-day.svg'
       console.log('Nubes')
       break;
     case 'Fog':
