@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import './App.css';
-import icons from './components/icons.js';
+import Icons from './components/icons.js';
 
 function App() {
   const [search, setSearch] = useState('Viña del Mar')
@@ -64,20 +64,17 @@ function App() {
           <p className='temperatura'>
             {values.main.temp.toFixed(0)}&deg;
           </p>
-          <img className='icon' src={icons(icon)} alt="icon-weather" />
+          <img className='icon' src={Icons(icon)} alt="icon-weather" />
           <div className='card-pie'>
             <p className='temp-max-min'>
             {values.main.temp_min.toFixed(0)}&deg;  |  {values.main.temp_max.toFixed(0)}&deg;
             </p>
           </div>
-
         </div>
       ) : (
         <h1>{"Ciudad no encontrada"}</h1>
       )}
-
     </div>
-
 
     </>
   );

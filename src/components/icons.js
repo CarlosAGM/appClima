@@ -1,6 +1,6 @@
 import React from 'react'
 
-const icons = (icon) => {
+const Icons = (icon) => {
   switch (icon) {
     case 'Thunderstorm':
       icon='icons/thunderstorms-rain.svg'
@@ -51,4 +51,4 @@ const icons = (icon) => {
   return icon
 }
 
-export default icons
+export default Icons
